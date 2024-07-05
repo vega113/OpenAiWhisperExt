@@ -2,6 +2,8 @@
   "manifest_version": 3,
   "name": "OpenAI Whisper Extension",
   "version": "1.0",
+  "description": "A Chrome extension to record audio, transcribe it using the OpenAI Whisper API, and copy the transcribed text.",
+
   "permissions": ["activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
