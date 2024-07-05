@@ -1,17 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "OpenAI Whisper Extension",
+  "name": "Speech to Text",
   "version": "1.0",
   "description": "A Chrome extension to record audio, transcribe it using the OpenAI Whisper API, and copy the transcribed text.",
-
   "permissions": ["activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png"
+    }
   },
   "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
